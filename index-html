@@ -8,12 +8,17 @@
 </head>
 <body>
   <main class="container">
-    <h1>Mission Possible Practice Scorer</h1>
+    <header class="header">
+      <h1>Mission Possible Practice Scorer</h1>
+      <p class="muted">Static GitHub Pages version • runs saved on this device • CSV export included</p>
+    </header>
 
     <!-- LOGIN -->
     <section id="loginSection" class="card">
       <h2>Login</h2>
-      <p class="muted">GitHub Pages version: runs save on this device. Login is a lock screen.</p>
+      <p class="muted">
+        This is a GitHub Pages (static) site. Login is a lock screen (client-side), not server security.
+      </p>
 
       <label>Username</label>
       <input id="username" placeholder="Enter username" autocomplete="username" />
@@ -50,8 +55,7 @@
         </div>
       </div>
 
-      <h3>Rule Scoring</h3>
-
+      <h3>Scoring Conditions (Yes/No)</h3>
       <div class="grid">
         <div>
           <label>Setup done in ≤ 30 minutes? (50 pts)</label>
@@ -140,12 +144,20 @@
               <th>Date</th>
               <th>Total</th>
               <th>Notes</th>
+              <th>Details</th>
               <th></th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
       </div>
+
+      <details class="card subtle">
+        <summary>What gets exported to CSV?</summary>
+        <p class="muted">
+          Every run includes date/time, notes, all condition Yes/No values, all 12 action Yes/No values, and total score.
+        </p>
+      </details>
     </section>
   </main>
 
